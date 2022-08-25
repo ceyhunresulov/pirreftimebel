@@ -2,6 +2,7 @@ const express = require("express");
 const indexRouters = require("./routers/indexRouters");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+let PORT = process.env.PORT || 3000;
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 
@@ -11,7 +12,7 @@ const dbURL =
 mongoose
   .connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
-    app.listen("3000");
+    app.listen(PORT, () => console.log(`${PORT} isleyir`));
   })
   .catch((err) => console.log(err));
 
