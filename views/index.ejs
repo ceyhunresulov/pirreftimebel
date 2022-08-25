@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,400;1,200&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700;1,800&family=Smooch&display=swap"
+      rel="stylesheet"
+    />
+    <title>furniture</title>
+  </head>
+  <body>
+    <div class="open__page">
+      <div class="open__page--img">
+        <img src="/img/logonew.png" />
+      </div>
+    </div>
+    <%-include("./inc/bigImg") %>
+    <!-- header -->
+    <header id="index__header">
+      <nav id="nav__top">
+        <div class="nav__top--logo">
+          <img src="/img/logonew.png" />
+        </div>
+        <ul class="navbar">
+          <li class="navbar__item">
+            <a class="navbar__item--link" href="/">Əsas səhifə</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__item--link" href="about">Haqqimizda</a>
+          </li>
+          <li class="navbar__item catalog__item">
+            <a class="navbar__item--link" href="catalog/0">Kataloq</a>
+            <ul class="catalog__dropdown catalog__dropdown--home">
+              <li><a class="navbar__item--link" href="catalog/1">yataq</a></li>
+              <hr />
+              <li><a class="navbar__item--link" href="catalog/2">divan</a></li>
+              <hr />
+              <li><a class="navbar__item--link" href="catalog/3">kreslo</a></li>
+              <hr />
+              <li><a class="navbar__item--link" href="catalog/4">bufik</a></li>
+              <hr />
+              <li>
+                <a class="navbar__item--link" href="catalog/5"
+                  >usaq mebelleri</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a class="navbar__item--link" href="catalog/6"
+                  >ofis mebelleri</a
+                >
+              </li>
+              <hr />
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__item--link" href="contact">Əlaqə</a>
+          </li>
+        </ul>
+        <!-- mobil navbar -->
+        <button class="navbar__icon">
+          <i class="fas bar fa-bars"> </i><i class="fas del fa-times"></i>
+        </button>
+        <ul class="mobil__navbar">
+          <li class="mobil__navbar--item">
+            <a class="mobil__navbar--link" href="/">Əsas səhifə</a>
+          </li>
+          <hr />
+          <li class="mobil__navbar--item">
+            <a class="mobil__navbar--link" href="about">Haqqimizda</a>
+          </li>
+          <hr />
+          <li class="mobil__navbar--item">
+            <a class="mobil__navbar--link">Kataloq</a>
+            <ul class="mobil__catalog--dropdown">
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="catalog/1">yataq</a>
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="catalog/2">divan</a>
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="catalog/3">kreslo</a>
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="catalog/4">bufik</a>
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="catalog/5"
+                  >usaq mebelleri</a
+                >
+              </li>
+              <hr />
+              <li class="mobil__catalog--item">
+                <a class="mobil__catalog--link" href="catalog/6"
+                  >ofis mebelleri</a
+                >
+              </li>
+              <hr />
+            </ul>
+          </li>
+          <hr />
+          <li class="mobil__navbar--item">
+            <a class="mobil__navbar--link" href="contact">Əlaqə</a>
+          </li>
+          <hr />
+        </ul>
+      </nav>
+    </header>
+
+    <!-- back image -->
+    <section id="bcimg">
+      <div id="bcimg__box">
+        <h1 class="pi__funiture">Pİ FURNİTURE</h1>
+      </div>
+    </section>
+    <!-- new models slider -->
+    <section id="new__models">
+      <h1 class="new__title">Yeni Model</h1>
+      <div class="models">
+        <div class="models__img--box">
+          <img
+            class="models__img"
+            src="./img/<%=images[0].images[0].filename%>"
+            alt=""
+          />
+        </div>
+        <div class="models__about">
+          <pre class="models__about--info"><%=images[0].desc%></pre>
+        </div>
+      </div>
+    </section>
+    <!-- gallery -->
+    <section id="gallery">
+      <h1 id="gallery__title">Butun Mebeller</h1>
+      <ul id="gallery__grid">
+        <%images.forEach(image=> {%>
+        <li>
+          <img src="./img/<%=image.images[0].filename%>" alt="" />
+          <div class="hover__box">
+            <a href="/product/<%=image._id%>" class="gallery__product--link"
+              ><i class="far fa-eye"></i
+            ></a>
+            <a class="expand" data-id="<%=image._id%>">
+              <i class="fas fa-expand"></i>
+            </a>
+          </div>
+        </li>
+        <%})%>
+      </ul>
+      <nav id="gallery__plus">
+        <button class="button__plus">daha cox goster</button>
+      </nav>
+    </section>
+    4
+    <!-- child slider -->
+    <section id="child">
+      <h1 id="child__title">Usaq Mebelleri</h1>
+      <div id="child__slider">
+        <ul class="child__slides">
+          <%childs.forEach(image=>{%>
+          <li class="child__slide">
+            <img src="./img/<%=image.images[0].filename%>" alt="" />
+          </li>
+          <%})%>
+        </ul>
+      </div>
+      <div class="child__angle">
+        <button class="child__angle--left">
+          <i class="fas fa-angle-left"></i>
+        </button>
+        <button class="child__angle--right">
+          <i class="fas fa-angle-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- instagram -->
+
+    <!-- footer  -->
+    <%- include("./inc/footer")%>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
