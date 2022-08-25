@@ -1,0 +1,211 @@
+// HOME 
+// nav top
+
+// big image
+.big__img{
+    &--link{
+        font-size: 2em;
+        color: white;
+    }
+    &--reset{
+        font-size: 3em;
+        color: white;
+    }
+}
+
+#nav__top{
+    .pi{
+        color: white;
+        font-size: 3em;
+    }
+    .navbar__item--link{
+        font-size: 2em;
+        color: white;
+    }
+}
+// bcimg 
+.pi__funiture{
+    color: white;
+    font-size: 5em;
+    letter-spacing: 3px;
+    font-family: "smoch",cursive;
+}
+
+
+// new models 
+ #new__models{
+    .new__title{
+        font-size: 3em;
+        color: black;
+    }
+    .models{
+        &__about{
+            &--info{
+                font-size: 2em;
+                color: black;
+            }
+        }
+    }
+
+ }
+// child
+
+#child{
+    .child__angle{
+        button{
+            font-size: 1.5em;
+            color: $main-color;
+        }
+        .fas{
+            font-size: 1.5em;
+        }
+
+    }
+}
+// nav footer
+#nav__footer{
+    a{
+        color: white;
+    }
+    li{
+        font-size: 2em;
+        color: white;
+    }
+    .footer__title{
+        font-size: 2.3em;
+        color: white;
+    }
+    hr{
+        border-top: none;
+    }
+}
+#instagram{
+    a{
+        font-size: 3em;
+        color: $main-color;
+        margin-bottom: 1.5em;
+    }
+    
+}
+
+#gallery__title{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+
+#child__title{
+    font-size: 3em;
+}
+// ABOUT
+.about{
+    &__info{
+        font-size: 2em;
+    }
+}
+//CATALOG 
+#catalog{
+    &__sidebar{
+        &--title{
+            font-size: 2.3em;
+            color: $font-color-first;
+            font-weight: bold;
+        }
+    }
+    &__gallery{
+        &--title{
+            font-size: 3em;
+            color: $main-color;
+        }
+    }
+    &__list{
+        .catalog__item{
+            &--link{
+                font-size: 2em;
+                color: $font-color-first;
+            }
+            &--count{
+                font-size: 1.3em;
+                color:$font-color-first
+            }
+        }
+    }
+}
+
+// CONTACT
+#contact{
+    &__title{
+        font-size: 3em;
+        letter-spacing: 3px;
+    }
+    #submit{
+        background-color: $main-color;
+        color: white;
+    }
+}
+
+#name,#lname,#email,#textarea{
+    font-size: 1.5em;
+    color: $main-color;
+
+}
+// Product
+.product{
+    &__title{
+        font-size: 2.5em;
+        color: black;
+    }
+    &__info{
+        &--item{
+            font-size: 2em;
+        }
+        &--desc{
+            font-size: 2em;
+        }
+    }
+}
+
+
+// dropdown 
+.catalog__dropdown{
+    background-color: $thirdary-color;
+    li{
+        transition: all ease 2s;
+        // font-size: 0 !important;
+    }
+}
+// dropdown
+
+
+
+
+
+
+
+
+
+
+
+// mobile 
+
+// mobile header 
+header{
+    .mobil__navbar{
+        &--link{
+            color: white;
+            font-size: 2em ;
+        }
+    }
+}
+
+// mobil dropdown 
+.mobil__catalog--dropdown{
+    .mobil__catalog--link{
+        color: white;
+        font-size: 1.5em;
+    }
+}
+
+
+// mobile 

@@ -1,0 +1,49 @@
+// contact 
+#contact{
+    margin-top: 100px !important;
+    height: 700px;
+    @extend .flex-y;
+    &__title{
+        margin-bottom: 2em;
+    }
+    form{
+        width: 60%;
+        padding: 2em 5em;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 5px $main-color;
+    }
+    .fullname{
+        width: 100%;
+        margin-bottom: 4em;
+        @extend .flex-between;
+        #name,#lname{
+           padding: .5em 1em;
+           width: 40%;
+        }
+    }
+    .email{
+        width: 100%;
+        margin-bottom: 7em;
+        #email{
+            width: 100%;
+            padding: .5em 1em;
+            box-sizing: border-box;
+        }
+    }
+    .textarea{
+        width: 100%;
+        margin-bottom: 4em;
+        #textarea{
+            width: 100%;
+            padding: .5em 1em;
+            box-sizing: border-box;
+        }
+    }
+    .post{
+        width: 100%;
+        #submit{
+            width: 100%;
+            padding: .5em 1em;
+        }
+    }
+}

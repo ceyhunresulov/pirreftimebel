@@ -1,0 +1,43 @@
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px !important;
+}
+.flex-center-x{
+    display: flex !important;
+    justify-content: center;
+}
+.flex-center-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-center-y{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-y{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+// button versiyon
+.button-v-1{
+    border-color: white;
+    border-radius: 5px;
+    padding: 7px 15px;
+}

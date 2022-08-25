@@ -1,0 +1,61 @@
+body {
+  padding: 50px;
+  box-sizing: border-box;
+}
+#admin-form {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.images {
+  background-color: burlywood;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.category {
+  width: 100%;
+  background-color: cadetblue;
+  margin-bottom: 20px;
+}
+#category {
+  background-color: cadetblue;
+  margin-top: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-left: none;
+  width: 20%;
+  font-size: 20px;
+}
+.category label {
+  margin: 10px;
+  font-size: 25px;
+}
+#category option {
+  font-size: 20px;
+}
+.desc {
+  background-color: darkgoldenrod;
+}
+.desc label {
+  font-size: 25px;
+  margin: 10px;
+}
+.desc textarea {
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: darkgoldenrod;
+}
+#submit {
+  width: 100%;
+  background-color: lightskyblue;
+  padding: 5px 0;
+  cursor: pointer;
+}

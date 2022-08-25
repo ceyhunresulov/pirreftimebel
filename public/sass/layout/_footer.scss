@@ -1,0 +1,27 @@
+footer{
+    padding: 2em;
+    box-sizing: border-box;
+    height: auto;
+    background-color: $main-color;
+    @extend .flex-center;
+    flex-direction: column;
+    .sosial{
+        ul{
+            @extend .flex-center-y;
+        }
+    }
+    .logo{
+        margin-bottom: 5em;
+        width: 300px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10%;
+        img{
+            width: 100%;
+            height: 100%;
+            transform: scale(1.5);
+            object-fit: cover;
+        }
+    }
+}
+

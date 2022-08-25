@@ -1,0 +1,72 @@
+#nav__top{
+    width: 70%;
+    height: 100%;
+    @extend .flex-center-y;
+    .nav__top--logo{
+        height: 80%;
+        width: 90px;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    .navbar{
+        width: 40%;
+        height: 100%;
+        @extend .flex-center-y;
+        li{
+            display: flex;
+            align-items: center;
+            
+            height: 100%;
+            position: relative;
+            transition: all ease .5s;
+        }
+    }
+}
+
+#nav__footer{
+    width: 70%;
+    height: 100%;
+    @extend .flex-between;
+    ul{
+        li{
+            margin: 1em 1em 1em 0;
+        }
+    }
+}
+#gallery__plus{
+    width: 100%;
+    height: 100px;
+    @extend .flex-center;
+}
+
+
+// mobil navbar icon 
+
+#nav__top{
+    .navbar__icon{
+        position: relative;
+        cursor: pointer;
+        display: none;
+        background: none;
+        color: white;
+        border-color: white;
+        width: 30px;
+        height: 30px;
+        .fas{
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);    
+            font-size: 18px;
+            transition: all ease .5s;
+        }
+        .del{
+            visibility: hidden;
+            opacity: 0;
+            transition: all ease .5s;
+        }
+    }
+}

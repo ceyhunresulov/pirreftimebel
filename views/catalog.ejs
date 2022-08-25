@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,400;1,200&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700;1,800&family=Smooch&display=swap"
+      rel="stylesheet"
+    />
+    <title>furniture contact</title>
+  </head>
+</html>
+<body>
+  <!-- big Img  -->
+  <%-include("./inc/bigImg") %>
+  <!-- header -->
+  <%-include("./inc/header")%>
+  <!-- catalog  -->
+  <section id="catalog">
+    <aside id="catalog__sidebar">
+      <div id="catalog__sidebar--box">
+        <h1 id="catalog__sidebar--title">Çeşidlər</h1>
+        <ul id="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="/catalog/0">Bütün mebellər</a>
+            <span class="catalog__item--count">(<%=all.length%>)</span>
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="/catalog/1">Çarpayı</a>
+            <span class="catalog__item--count"
+              >(<%=all.filter(el=>el.category_id==1).length%>)</span
+            >
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="/catalog/2">Divan</a>
+            <span class="catalog__item--count"
+              >(<%=all.filter(el=>el.category_id==2).length%>)</span
+            >
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="/catalog/3">Kreslo</a>
+            <span class="catalog__item--count"
+              >(<%=all.filter(el=>el.category_id==3).length%>)</span
+            >
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="/catalog/4">Pufik</a>
+            <span class="catalog__item--count"
+              >(<%=all.filter(el=>el.category_id==4).length%>)</span
+            >
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="/catalog/5">Uşaq mebelləri</a>
+            <span class="catalog__item--count"
+              >(<%=all.filter(el=>el.category_id==5).length%>)</span
+            >
+          </li>
+          <hr />
+          <li class="catalog__item">
+            <a class="catalog__item--link" href="/catalog/6">Ofis mebelləri</a>
+            <span class="catalog__item--count"
+              >(<%=all.filter(el=>el.category_id==6).length%>)</span
+            >
+          </li>
+          <hr />
+        </ul>
+      </div>
+    </aside>
+    <div id="catalog__gallery">
+      <ul id="catalog__gallery--grid">
+        <%data.forEach(img=>{%>
+        <li>
+          <img src="/img/<%=img.images[0].filename%>" alt="" />
+          <div class="hover__box">
+            <a href="/product/<%=img._id%>" class="gallery__product--link"
+              ><i class="far fa-eye"></i
+            ></a>
+            <a class="expand" data-id="<%=img._id%>">
+              <i class="fas fa-expand"></i>
+            </a>
+          </div>
+        </li>
+        <%})%>
+      </ul>
+    </div>
+  </section>
+
+  <!-- instagram -->
+  <!-- footer  -->
+  <%- include("./inc/footer")%>
+  <script type="module" src="/catalog.js"></script>
+</body>

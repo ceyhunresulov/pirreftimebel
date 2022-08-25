@@ -1,0 +1,25 @@
+.button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    @extend .flex-center-y;
+    button{
+        background-color: lightgray;
+        border: none;
+    }
+    .fas{
+        font-size: 40px;
+        color: $main-color;
+    }
+
+}
+
+.button__plus{
+    background:none;
+    color: white;
+    @extend .button-v-1
+}

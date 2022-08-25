@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="admCss/style.css" />
+  </head>
+  <body>
+    <form
+      action="/admin"
+      method="post"
+      enctype="multipart/form-data"
+      id="admin-form"
+    >
+      <div class="images">
+        <label for="img">Əsas şəkil</label><br />
+        <input type="file" placeholder="img" name="img" multiple />
+        <!-- <label for="img">Əlavə şəkil</label><br />
+        <input type="file" placeholder="" name="img" /><br />
+        <label for="img">Əlavə şəkil</label><br />
+        <input type="file" placeholder="" name="img" /><br />
+        <label for="img">Əlavə şəkil</label><br />
+        <input type="file" placeholder="" name="img" /><br /> -->
+      </div>
+      <div class="category">
+        <label for="category">Çeşidlər</label><br />
+        <select name="category" id="category">
+          <option value="">Seç</option>
+          <option value="1">yataq</option>
+          <option value="2">divan</option>
+          <option value="3">kreslo</option>
+          <option value="4">pufik</option>
+          <option value="5">usaq</option>
+          <option value="6">ofis</option>
+          <option value="7">stol</option>
+        </select>
+      </div>
+      <div class="desc">
+        <label for="desc">Məlumat</label><br />
+        <textarea name="desc" id="desc" cols="40" rows="15"></textarea>
+      </div>
+      <input type="submit" placeholder="gonder" id="submit" />
+    </form>
+  </body>
+</html>
