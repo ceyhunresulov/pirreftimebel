@@ -13,7 +13,7 @@ function getScroll() {
   if (window.scrollY > 250) {
     if (window.innerWidth > 1198) {
       header.style.height = 70 + "px";
-      logo.style.width = 70 + "px";
+      logo.style.width = 60 + "px";
     }
   } else {
     header.style.height = 100 + "px";
