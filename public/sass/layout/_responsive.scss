@@ -1,5 +1,11 @@
 // desktop
 @media  (min-width: 1198px){
+    #bcimg{
+        height: 900px;
+        &__box{
+            background-size: 100% 100% !important
+        }
+    }
     #gallery{
         &__grid{
             li{
@@ -216,6 +222,13 @@
             height: auto !important;
             width: auto !important;
         }
+    }
+    // background img 
+    #bcimg{
+        // height: 100vh !important ;
+        // &__box{
+        // background-size: cover !important;
+        // }
     }
     // header
     header{

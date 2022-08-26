@@ -283,6 +283,12 @@ header .mobil__navbar--link {
 }
 
 @media (min-width: 1198px) {
+  #bcimg {
+    height: 900px;
+  }
+  #bcimg__box {
+    background-size: 100% 100% !important;
+  }
   #gallery__grid li {
     width: calc(23.5%);
     margin-right: 2%;
@@ -894,15 +900,15 @@ footer .logo img {
 }
 
 #bcimg {
-  height: calc(100vw/2);
+  height: 100vh;
 }
 
 #bcimg__box {
   height: 100%;
   width: 100%;
-  background-image: url("/img/backimage.jpg");
+  background-image: url("/img/bcimg3.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 #new__models {
