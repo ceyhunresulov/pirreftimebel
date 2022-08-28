@@ -38,7 +38,7 @@
             <a class="navbar__item--link" href="/">Əsas səhifə</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__item--link" href="about">Haqqimizda</a>
+            <a class="navbar__item--link" href="about">Haqqımızda</a>
           </li>
           <li class="navbar__item catalog__item">
             <a class="navbar__item--link" href="catalog/0">Kataloq</a>
@@ -133,7 +133,7 @@
     </section>
     <!-- new models slider -->
     <section id="new__models">
-      <h1 class="new__title">Yeni Model</h1>
+      <h1 class="new__title">Yeni</h1>
       <div class="models">
         <div class="models__img--box">
           <img
@@ -149,7 +149,7 @@
     </section>
     <!-- gallery -->
     <section id="gallery">
-      <h1 id="gallery__title">Butun Mebeller</h1>
+      <h1 id="gallery__title">Bütün</h1>
       <ul id="gallery__grid">
         <%images.forEach(image=> {%>
         <li>
@@ -166,13 +166,15 @@
         <%})%>
       </ul>
       <nav id="gallery__plus">
-        <button class="button__plus">daha cox goster</button>
+        <button class="button__plus">
+          <i class="fas fa-angle-double-down"></i>
+        </button>
       </nav>
     </section>
     4
     <!-- child slider -->
     <section id="child">
-      <h1 id="child__title">Usaq Mebelleri</h1>
+      <h1 id="child__title">Uşaq Mebelləri</h1>
       <div id="child__slider">
         <ul class="child__slides">
           <%childs.forEach(image=>{%>

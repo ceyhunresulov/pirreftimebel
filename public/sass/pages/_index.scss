@@ -96,7 +96,7 @@
             
         }
         &__img{
-            border: 8px solid $main-color;
+            box-shadow: 1px 1px 10px $main-color;
             height: 100%;
         }
         &__about{
@@ -108,7 +108,7 @@
 // gallery 
 #gallery{
     // width: 100%;
-    background-color: $main-color;
+    background-color: $gallery-color;
     height: auto;
     padding-bottom: 1em;
     box-sizing: border-box;
@@ -206,13 +206,19 @@
         }
     }
 }
-#instagram{
+.sosial{
     border-top: 1px solid $main-color;
     height: 200px;
     background-color: $secondary-color;
+    &__box{
     @extend .flex-center;
-    flex-direction: column;
+    a{
+        margin: 0 1em;
+    }
+    }
     h2{
         margin-bottom: 1.5em;
+        text-align: center;
+        padding: 2em;
     } 
 }

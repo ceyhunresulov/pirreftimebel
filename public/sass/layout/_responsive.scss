@@ -1,5 +1,11 @@
 // desktop
 @media  (min-width: 1198px){
+    header{
+        height: 100px;
+        .nav__top--logo{
+            width: 80px;
+        }
+    }
     #bcimg{
         height: 900px;
         &__box{
@@ -30,20 +36,25 @@
     }
 }
 // tablet
-@media  (max-width: 1198px) and (min-width:720px){
+@media  (max-width: 1198px) and (min-width:768px){
     body{
         font-size: 9px !important;
     }
     // header
     header{
         .nav__top--logo{
-            width: 80px !important;
+            width: 80px;
         }
-        height: 90px !important;
+        height: 90px;
         position: relative;
         #nav__top{
             .navbar__icon{
                 display: block !important;
+                width: 27px;
+                height: 27px;
+                i{
+                    font-size: 17px !important;
+                }
             }
             .navbar{
                 display: none !important;
@@ -103,7 +114,7 @@
 }
 
 // laptop
-@media  (max-width: 720px) and (min-width:500px){
+@media  (max-width: 768px) and (min-width:576px){
     body{
         font-size: 8px !important;
     }
@@ -117,13 +128,18 @@
     // header
     header{
         .nav__top--logo{
-            width: 70px !important;
+            width: 60px;
         }
-        height: 80px !important;
+        height: 70px;
         position: relative;
         #nav__top{
             .navbar__icon{
                 display: block !important;
+                width: 24px;
+                height: 24px;
+                i{
+                    font-size: 15px !important;
+                }
             }
             .navbar{
                 display: none !important;
@@ -186,6 +202,15 @@
         }
     }
     footer{
+        .logo{
+            top: -75px !important;
+            width: 200px !important;
+            height: 150px !important;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
         #nav__footer{
             display: flex;
             flex-wrap: wrap;
@@ -205,7 +230,7 @@
 
 
 // phone 
-@media  (max-width: 500px){
+@media  (max-width: 576px){
     body{
         font-size: 7px !important;
     }
@@ -224,22 +249,27 @@
         }
     }
     // background img 
-    #bcimg{
-        // height: 100vh !important ;
-        // &__box{
-        // background-size: cover !important;
-        // }
-    }
+    // #bcimg{
+    //     // height: 100vh !important ;
+    //     // &__box{
+    //     // background-size: cover !important;
+    //     // }
+    // }
     // header
     header{
         .nav__top--logo{
-            width: 60px !important;
+            width: 50px;
         }
-        height: 70px !important;
+        height: 60px;
         position: relative;
         #nav__top{
             .navbar__icon{
                 display: block !important;
+                width: 23px;
+                height: 23px;
+                i{
+                    font-size: 14px !important;
+                }
             }
             .navbar{
                 display: none !important;
@@ -249,13 +279,40 @@
             top: 70px
         }
     }
+    // new models
+#new__models{
+    width: 100%;
+    margin-bottom: 8em;
+    .new__title{
+        text-align: center;
+        margin: 1em 0 !important;
+    }.models{
+        width: 90% !important;
+        height: calc(100vw/2) !important;
+        margin: 0 auto;
+        &__img--box{
+            width: 65%;
+            height: 100%;
+            // @extend .flex-center-x;
+            display: flex;
+            justify-content: center; 
+        }
+        &__img{
+            height: 100%;
+            width: 100% !important;
+        }
+        &__about{
+            width: 30%;
+        }
+    }
+}
     // gallery 
     #gallery{
         &__grid{
            li{
             @include grid(1,0);
             height: 300px;
-            margin-bottom: 2%;
+            margin-bottom: 20px;
            }
         }
     }
@@ -324,7 +381,10 @@
         }
     }
     footer{
+        margin-top:40px !important;
+        padding:100px 0 2em !important;
         .logo{
+            top: -75px !important;
             width: 200px !important;
             height: 150px !important;
             img{
@@ -335,9 +395,10 @@
         #nav__footer{
             display: flex;
             flex-wrap: wrap;
+            width: 80%;
             ul{
                 display: block;
-                width: 70px;
+                width: 100px;
                 *{
                     text-align: center;
                 }

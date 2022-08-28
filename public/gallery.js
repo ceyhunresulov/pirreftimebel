@@ -27,25 +27,21 @@ function getGalleryHeight() {
   let galleryHeight;
   let width = window.innerWidth;
   if (width > 1198) {
-    heightItem =
+    galleryHeight =
       Math.ceil(galleryImg.length / 4) * galleryImg[0].clientHeight +
       Math.ceil(galleryImg.length / 4) * elMargin;
-    galleryHeight = row * galleryImg[0].clientHeight + row * elMargin;
-  } else if (1198 > width && width > 720) {
-    heightItem =
+  } else if (1198 > width && width > 768) {
+    galleryHeight =
       Math.ceil(galleryImg.length / 3) * galleryImg[0].clientHeight +
       Math.ceil(galleryImg.length / 3) * elMargin;
-    galleryHeight = row * galleryImg[0].clientHeight + row * elMargin;
-  } else if (720 > width && width > 500) {
-    heightItem =
+  } else if (768 > width && width > 576) {
+    galleryHeight =
       Math.ceil(galleryImg.length / 2) * galleryImg[0].clientHeight +
       Math.ceil(galleryImg.length / 2) * elMargin;
-    galleryHeight = row * galleryImg[0].clientHeight + row * elMargin;
-  } else if (width <= 500) {
-    heightItem =
+  } else if (width <= 576) {
+    galleryHeight =
       Math.ceil(galleryImg.length / 1) * galleryImg[0].clientHeight +
       Math.ceil(galleryImg.length / 1) * elMargin;
-    galleryHeight = row * galleryImg[0].clientHeight + row * elMargin;
   }
   gallery.style.height = galleryHeight + "px";
 }
@@ -55,13 +51,13 @@ function changeRow() {
   let width = window.innerWidth;
   let x;
   let y;
-  if (width > 720) {
+  if (width > 768) {
     y = 5;
     x = 5;
-  } else if (720 > width && width > 500) {
+  } else if (768 > width && width > 576) {
     y = 10;
     x = 10;
-  } else if (width <= 500) {
+  } else if (width <= 576) {
     y = 20;
     x = 20;
   }

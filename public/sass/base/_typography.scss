@@ -1,6 +1,9 @@
 // HOME 
-// nav top
-
+// font Family 
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px !important;
+}
 // big image
 .big__img{
     &--link{
@@ -12,7 +15,7 @@
         color: white;
     }
 }
-
+// nav top
 #nav__top{
     .pi{
         color: white;
@@ -36,13 +39,13 @@
  #new__models{
     .new__title{
         font-size: 3em;
-        color: black;
+        color: $main-color;
     }
     .models{
         &__about{
             &--info{
                 font-size: 2em;
-                color: black;
+                color: $main-color;
             }
         }
     }
@@ -51,6 +54,9 @@
 // child
 
 #child{
+    &__title{
+        color: $main-color;
+    }
     .child__angle{
         button{
             font-size: 1.5em;
@@ -65,23 +71,23 @@
 // nav footer
 #nav__footer{
     a{
-        color: white;
+        color: $gallery-color;
     }
     li{
         font-size: 2em;
-        color: white;
+        color: $gallery-color;
     }
     .footer__title{
         font-size: 2.3em;
-        color: white;
+        color: $gallery-color;
     }
     hr{
         border-top: none;
     }
 }
-#instagram{
+.sosial{
     a{
-        font-size: 3em;
+        font-size: 4em;
         color: $main-color;
         margin-bottom: 1.5em;
     }
@@ -90,7 +96,7 @@
 
 #gallery__title{
     font-size: 3em;
-    color: white;
+    color: $main-color;
     text-align: center;
 }
 

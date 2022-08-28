@@ -11,13 +11,30 @@ resDel.addEventListener("click", hiddenDropdown);
 
 function getScroll() {
   if (window.scrollY > 250) {
-    if (window.innerWidth > 1198) {
+    if (window.innerWidth >= 1198) {
       header.style.height = 70 + "px";
       logo.style.width = 60 + "px";
+    } else if ((window.innerWidth > 576) & (window.innerWidth < 768)) {
+      header.style.height = 60 + "px";
+      logo.style.width = 50 + "px";
+    } else if (window.innerWidth <= 576) {
+      header.style.height = 50 + "px";
+      logo.style.width = 40 + "px";
     }
   } else {
-    header.style.height = 100 + "px";
-    if (window.innerWidth > 1198) logo.style.width = 90 + "px";
+    if (window.innerWidth >= 1198) {
+      logo.style.width = 90 + "px";
+      header.style.height = 100 + "px";
+    } else if ((window.innerWidth > 768) & (window.innerWidth < 1198)) {
+      header.style.height = 90 + "px";
+      logo.style.width = 80 + "px";
+    } else if ((window.innerWidth > 576) & (window.innerWidth < 768)) {
+      header.style.height = 70 + "px";
+      logo.style.width = 60 + "px";
+    } else if (window.innerWidth <= 576) {
+      header.style.height = 60 + "px";
+      logo.style.width = 50 + "px";
+    }
   }
 }
 function showDropdown(e) {

@@ -1,5 +1,5 @@
 const headerColor1 = "rgba(30,29,28,.5)";
-const headerColor2 = "#302928";
+const headerColor2 = "#423F3E";
 const header = document.querySelector("header");
 const dropdownHome = document.querySelector(".catalog__dropdown--home");
 const dropdown = document.querySelector(".catalog__dropdown");

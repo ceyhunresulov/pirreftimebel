@@ -3,11 +3,15 @@
     width: 100%;
     @extend .flex-between;
     &__sidebar{
+        position: fixed;
+        left: 0;
+        top: 100px;
         width: 30%;
         @extend .flex-center-row;
         &--box{
             width: 60%;
             margin-top: 5em;
+            z-index: -1;
         }
         &--title{
             margin-bottom: 1em;
@@ -22,12 +26,13 @@
     }
     &__gallery{
         margin-top: 100px;
+        margin-left: 30%;
         width: 70%;
         &--grid{
             width: 100%;
             display:flex;
             flex-wrap: wrap;
-            li{
+            li{         
                 position: relative;
             }
             img{
