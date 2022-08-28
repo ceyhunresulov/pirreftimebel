@@ -9,9 +9,12 @@
         width: 30%;
         @extend .flex-center-row;
         &--box{
-            width: 60%;
+            background-color: $gallery-color;
+            width: 65%;
             margin-top: 5em;
             z-index: -1;
+            padding: 2em;
+            box-sizing: border-box;
         }
         &--title{
             margin-bottom: 1em;
@@ -21,14 +24,23 @@
         }
         .catalog__item{
             margin: 1.5em 0 0;
-            @extend .flex-center-y
+            @extend .flex-center-y;
+            a{
+                transition: all ease .3s;
+            }
+            a:hover{
+                margin-left: 10px ;
+            }
         }
     }
     &__gallery{
-        margin-top: 100px;
+        background-color: $main-color;     
+        margin-top: 50px;
         margin-left: 30%;
-        width: 70%;
+        width: 70%;    
         &--grid{
+            padding: 2em;
+            box-sizing: border-box;
             width: 100%;
             display:flex;
             flex-wrap: wrap;

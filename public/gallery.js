@@ -27,21 +27,25 @@ function getGalleryHeight() {
   let galleryHeight;
   let width = window.innerWidth;
   if (width > 1198) {
-    galleryHeight =
+    heightItem =
       Math.ceil(galleryImg.length / 4) * galleryImg[0].clientHeight +
       Math.ceil(galleryImg.length / 4) * elMargin;
+    galleryHeight = row * galleryImg[0].clientHeight + row * elMargin;
   } else if (1198 > width && width > 768) {
-    galleryHeight =
+    heightItem =
       Math.ceil(galleryImg.length / 3) * galleryImg[0].clientHeight +
       Math.ceil(galleryImg.length / 3) * elMargin;
+    galleryHeight = row * galleryImg[0].clientHeight + row * elMargin;
   } else if (768 > width && width > 576) {
-    galleryHeight =
+    heightItem =
       Math.ceil(galleryImg.length / 2) * galleryImg[0].clientHeight +
       Math.ceil(galleryImg.length / 2) * elMargin;
+    galleryHeight = row * galleryImg[0].clientHeight + row * elMargin;
   } else if (width <= 576) {
-    galleryHeight =
+    heightItem =
       Math.ceil(galleryImg.length / 1) * galleryImg[0].clientHeight +
       Math.ceil(galleryImg.length / 1) * elMargin;
+    galleryHeight = row * galleryImg[0].clientHeight + row * elMargin;
   }
   gallery.style.height = galleryHeight + "px";
 }

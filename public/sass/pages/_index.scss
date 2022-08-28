@@ -98,6 +98,8 @@
         &__img{
             box-shadow: 1px 1px 10px $main-color;
             height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
         &__about{
             width: 30%;
@@ -119,6 +121,8 @@
     &__grid{
         display: flex;
         flex-wrap: wrap;
+        box-sizing: border-box;
+        overflow: hidden;
         li{  
             position: relative;   
             background-color:white;
