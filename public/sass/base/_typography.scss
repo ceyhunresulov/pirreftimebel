@@ -106,8 +106,14 @@ body{
 }
 // ABOUT
 .about{
+    &__title{
+        font-size: 2em;
+        color: $gallery-color;
+    }
     &__info{
         font-size: 2em;
+        color: $main-color;
+        line-height: 30px;
     }
 }
 //CATALOG 
@@ -210,6 +216,9 @@ header{
     .mobil__catalog--link{
         color: white;
         font-size: 1.5em;
+    }
+    hr{
+        width: 60% !important;
     }
 }
 

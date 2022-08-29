@@ -2,16 +2,16 @@
     margin-top: 100px;
     width: 100%;
     @extend .flex-between;
+    position: relative;
     &__sidebar{
         position: fixed;
         left: 0;
-        top: 100px;
+        top: 150px;
         width: 30%;
         @extend .flex-center-row;
         &--box{
             background-color: $gallery-color;
             width: 65%;
-            margin-top: 5em;
             z-index: -1;
             padding: 2em;
             box-sizing: border-box;

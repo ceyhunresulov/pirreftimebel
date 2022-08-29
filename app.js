@@ -2,7 +2,7 @@ const express = require("express");
 const indexRouters = require("./routers/indexRouters");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-let PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 5000;
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 
